@@ -1,8 +1,10 @@
+## -*- coding: utf-8 -*-
 import requests
 import pytz
 import re
 from datetime import datetime
 from time import sleep
+
 # Адрес нашего бота (без указания запроса)
 url = 'https://api.telegram.org/bot5776107426:AAFU4jr_THm57H0JUjxD2vNXWg77RllPaU4/'
 
