@@ -65,6 +65,12 @@ def main():
       send_message(get_chat_id(updates_json), "/add - add new record to file. Follow the syntax: /add 20.20.2020, Жим_Лежа, 4, 12, 60\n/del - delete the file.\n/show - show all records from current date. Follow the syntax: /show 20.20.2020\n/help - list of commands")
       last_update_id = current_update_id[0]
       _, message = get_update_id(last_update(get_updates_json()))
+
+    elif (last_update_id != current_update_id[0]) and  (message == "/start"):
+      send_message(get_chat_id(updates_json), "Welcome to platinum-bot! Bot is created to make some training records which supposed to make our life easier. You can add, delete, and show records. Use /help for command list.")
+      last_update_id = current_update_id[0]
+      _, message = get_update_id(last_update(get_updates_json()))
+
     elif (last_update_id != current_update_id[0]) and  (message == "/del"):
       text_file = open("sample.txt", "w")
       text_file.close()
