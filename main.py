@@ -57,7 +57,7 @@ def main():
       text_file = open("sample.txt", "a")
       text_file.write(message + "\n")
       text_file.close()
-      send_message(get_chat_id(updates_json), "Запись успешна сохранена!")
+      send_message(get_chat_id(updates_json), "Запись успешно сохранена!")
       last_update_id = current_update_id[0]
       _, message = get_update_id(last_update(get_updates_json()))
       
@@ -89,7 +89,7 @@ def main():
       _, message = get_update_id(last_update(get_updates_json()))
 
     elif (last_update_id != current_update_id[0]):
-      send_message(get_chat_id(updates_json), "Запись не сохранена!")
+      send_message(get_chat_id(updates_json), "Запись не сохранена! Проверьте правильность написания введённых данных.")
       last_update_id = current_update_id[0]
       _, message = get_update_id(last_update(get_updates_json()))
     
