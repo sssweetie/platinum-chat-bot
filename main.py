@@ -6,7 +6,7 @@ from datetime import datetime
 from time import sleep
 
 # Адрес нашего бота (без указания запроса)
-url = 'https://api.telegram.org/bot5776107426:AAFU4jr_THm57H0JUjxD2vNXWg77RllPaU4/'
+url = 'https://api.telegram.org/bot5767584645:AAEeqnAucht38zYfYc0R4LtaZFvYLS9a5uk/'
 
 # Получаем JSON-строку ответа на запрос getUpdates
 def get_updates_json():
